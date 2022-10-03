@@ -1,0 +1,23 @@
+body{
+    background-color:#97B5E0;
+    color: #6039EB;
+    font-family: Righteous;
+    font-size: 20pt;
+}
+
+main {
+    text-align: center;
+    font-family: Righteous;
+    font-size: 10pt;
+}
+
+header {
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Bebas Neue";
+    font-size: 30pt;
+}
+
+footer{
+    font-size: 7.5pt;
+}
