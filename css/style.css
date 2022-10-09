@@ -43,6 +43,8 @@ body{
     height: 150pt;
     width: 275pt;
     border-radius: 30pt;
+    margin: 0 auto;
+    margin-bottom: 20pt;
 }
 
 #hobbies ul li:nth-child(odd) {
@@ -51,6 +53,8 @@ body{
     font-size: 13.5pt;
     list-style-position:outside;
     list-style-type:circle;
+    font-style:italic
+    ;
 }
 
 #hobbies ul li:nth-child(even) {
@@ -58,6 +62,9 @@ body{
     font-family: Righteous;
     font-size: 13.5pt;
     list-style-position:inside;
+    font-variant: small-caps;
+    font-weight: bolder;
+    
 }
 
 #gallery {
@@ -77,7 +84,7 @@ body{
     text-align:center;
     color: #6039EB;
     font-family: Righteous;
-    font-size: 12.5pt;
+    font-size: 15pt;
 }
 
 #ending {
@@ -87,6 +94,18 @@ body{
     background-color:#6A0A8F;
     color:#30B000;
     font-family: "Bebas Neue";
+}
+
+#lit {
+    color: #6039EB;
+    font-family: Righteous;
+    font-size: 16.5pt;
+    border-style: dotted;
+    border-color: #30B000;
+    border-radius: 2.5%;
+    border-width: 2.5pt;
+    padding: 20pt;
+
 }
 
 footer {
