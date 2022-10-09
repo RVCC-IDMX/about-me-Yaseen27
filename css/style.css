@@ -60,6 +60,26 @@ body{
     list-style-position:inside;
 }
 
+#gallery {
+    border-style: solid;
+    border-color:#6A0A8F;
+}
+
+#gallery img {
+    scale: 100%;
+    border-style: dashed;
+    border-color: #30B000;
+    border-radius: 12.5%;
+    border-width: 3.5pt;
+}
+
+#gallery figure {
+    text-align:center;
+    color: #6039EB;
+    font-family: Righteous;
+    font-size: 12.5pt;
+}
+
 #ending {
     color: #6039EB;
     font-family: Righteous;
