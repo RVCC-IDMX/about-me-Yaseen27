@@ -19,6 +19,10 @@ h2,h3,h4,h5,h6 {
     color:#30B000;
 }
 
+h2 {
+    margin: .1em;
+}
+
 body{
     background-color:#97B5E0;
 }
@@ -35,6 +39,12 @@ body{
     color: #6039EB;
     font-family: Righteous;
     font-size: 13.5pt;
+}
+
+section #hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #hobbies ul {
@@ -111,4 +121,20 @@ body{
 footer {
     font-size: 10.5pt;
     color:#6A0A8F;
+}
+
+@media screen and (min-width: 60em)  {
+    figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    figcaption {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    margin-left: 1rem;
+    text-align: left;
+    }
+    
 }
