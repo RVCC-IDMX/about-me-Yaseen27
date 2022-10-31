@@ -50,11 +50,11 @@ section #hobbies {
 #hobbies ul {
     border-style: dashed;
     border-color: #6A0A8F;
-    height: 150pt;
+    height: 250pt;
     width: 275pt;
     border-radius: 30pt;
     margin: 0 auto;
-    margin-bottom: 20pt;
+    border-bottom: 20pt;
 }
 
 #hobbies ul li:nth-child(odd) {
@@ -118,6 +118,30 @@ section #hobbies {
 
 }
 
+#myVideo {
+    margin: 0 auto;
+    width:1000px;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 56.25%;
+    height: 0px;
+    text-align: center;
+    color:#6039EB;
+    font-family: Righteous;
+    font-size: 12pt;
+}
+
+#videoWrapper iframe {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top:0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
 footer {
     font-size: 10.5pt;
     color:#6A0A8F;
@@ -165,4 +189,5 @@ hr{
 figure {
     display: block;
 }
+
 }
