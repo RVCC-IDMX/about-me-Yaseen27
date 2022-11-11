@@ -140,8 +140,8 @@
     <section id="myVideo">
        
         <h2>Video:</h2>
-        <div class="videoWrapper">
-        <iframe src="https://www.youtube.com/embed/MppqKWBs3A4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="videoWrapper">
+        <iframe id= "myVideo" width="560" height="315" src="https://www.youtube.com/embed/MppqKWBs3A4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <caption>This is a slide show of a few pictures I took during Summer of 2022</caption>
     
@@ -158,27 +158,27 @@
 
                 <div id="formElements">
 
-                    <label for="name">Name (required)</label>
+                    <label for="name">Name (required):</label>
                     <input type="text" id="name" name="name" required>
 
-                    <label for="email">Email (required)</label>
+                    <label for="email">Email (required):</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="phone">Phone (optional)</label>
+                    <label for="phone">Phone (optional):</label>
                     <input type="tel" id="phone" name="phone">
 
-                    <label for="phonetype">Phone Type (optional)</label>
+                    <label for="phonetype">Phone Type (optional):</label>
                     <select id="phonetype" name="phonetype">
-                        <option value="" selected>Select phone type</option>
+                        <option value="" selected>Select phone type:</option>
                         <option value="Mobile">Mobile</option>
                         <option value="Work">Work</option>
                         <option value="Home">Home</option>
                     </select>
 
-                    <label for="message">Message (optional)</label>
+                    <label for="message">Message (optional):</label>
                     <textarea id="message" name="message" rows="8"></textarea>
 
-                    <fieldset>
+                    <fieldset id="messageBack">
                         <legend>Would you like to reply?</legend>
 
                         <ul>
@@ -193,6 +193,8 @@
                             </li>
                         </ul>
                     </fieldset>
+
+                    <button type="submit">Send!</button>
 
                 </div>
 

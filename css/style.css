@@ -30,14 +30,14 @@ body{
 #hero {
     text-align:center;
     color: #6039EB;
-    font-family: Righteous;
+    font-family: "Righteous";
     font-size: 13.5pt;
 }
 
 #bio {
     text-align:center;
     color: #6039EB;
-    font-family: Righteous;
+    font-family: "Righteous";
     font-size: 13.5pt;
 }
 
@@ -119,28 +119,76 @@ section #hobbies {
 }
 
 #myVideo {
-    margin: 0 auto;
-    width:1000px;
+    margin-top: 3rem;
+    width:100%;
+    display:block;
     position: relative;
-    padding-top: 25px;
-    padding-bottom: 56.25%;
-    height: 0px;
     text-align: center;
     color:#6039EB;
     font-family: Righteous;
     font-size: 12pt;
+    padding-bottom: 1rem;
 }
 
-#videoWrapper iframe {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    top:0px;
-    height: 100%;
-    width: 100%;
-    text-align: center;
+#formElements {
+    display:grid;
+    row-gap:0.5em;
 }
+
+.contact {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+fieldset {
+    border: 2px dashed #30B000;
+    margin-top:1em;
+    margin-bottom:1em;
+    border-radius: 2em;
+}
+
+legend {
+    background-color:#30B000;
+    border-color: #30B000;
+    color: #6A0A8F;
+    padding:0.5em;
+    font-family: "Righteous";
+    text-align: center;
+    border-radius: 2em;
+}
+
+#contactForm input, #contactForm textarea, #contactForm select, #contactForm button {
+    padding:0.5em;
+    font-size:1rem;
+}
+
+#messageBack ul {
+list-style:none;
+padding:0px;
+}
+
+#messageBack li{
+    margin: 1rem;
+}
+
+#contactForm button {
+    background-color: #6A0A8F;
+    color:#30B000;
+    border: 2px solid #30B000;
+    max-width:400px;
+    width:50%;
+    justify-self: center; 
+    font-family: "Righteous";
+    border-radius: 1.5em;
+}
+
+#contactForm label{
+    color:#6A0A8F;
+    font-family: "Righteous";
+    text-decoration: underline;
+}
+
 
 footer {
     font-size: 10.5pt;
