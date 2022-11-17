@@ -73,8 +73,28 @@ text-decoration: none;
 display: inline-block;
 }
 
+.navbar-links a:hover,
+.navbar-links a:focus {
+    color: #6A0A8F;
+    background-color: #30B000;
+    border-radius: 10px;
+    outline: none;
+}
+
 /* 
 media query for non-mobile nav bar
 min-width set to width of nav elements 
 such that no text wraps 
 */
+
+@media screen and (min-width: 60rem) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
