@@ -47,10 +47,19 @@ section #hobbies {
     align-items: center;
 }
 
+#hobbies p {
+    color: #6039EB;
+    font-family: Righteous;
+    font-size: 13.5pt;
+    text-align: center;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+}
+
 #hobbies ul {
     border-style: dashed;
     border-color: #6A0A8F;
-    height: 250pt;
+    height: 130pt;
     width: 275pt;
     border-radius: 30pt;
     margin: 0 auto;
@@ -97,14 +106,6 @@ section #hobbies {
     font-size: 15pt;
 }
 
-#ending {
-    color: #6039EB;
-    font-family: Righteous;
-    font-size: 16.5pt;
-    background-color:#6A0A8F;
-    color:#30B000;
-    font-family: "Bebas Neue";
-}
 
 #lit {
     color: #6039EB;
