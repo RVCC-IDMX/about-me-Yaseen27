@@ -1,7 +1,9 @@
+/* logo styling */
 #logo img {
     text-align: left;
 }
 
+/* header styling */
 header {
     text-align: center;
     text-decoration: underline;
@@ -10,6 +12,27 @@ header {
     background-color:#6A0A8F;
     color:#30B000;
 }
+
+/* animation for avatar */
+@keyframes float {
+    0% {
+        transform: translatey(0px); 
+    }
+    50% {
+        transform: translatey(-22.5px); 
+    }
+    100% {
+        transform: translatey(0px); 
+    }
+
+
+}
+
+#hero img {
+    animation: float 4.5s ease-in-out infinite;
+}
+
+/* styling for smaller headers*/
 h2,h3,h4,h5,h6 {
     text-align: center;
     text-decoration: underline;
@@ -19,14 +42,17 @@ h2,h3,h4,h5,h6 {
     color:#30B000;
 }
 
+/* styling for h2 */
 h2 {
     margin: .1em;
 }
 
+/* background color of webpage */
 body{
     background-color:#97B5E0;
 }
 
+/* hero section sytling */
 #hero {
     text-align:center;
     color: #6039EB;
@@ -34,6 +60,7 @@ body{
     font-size: 13.5pt;
 }
 
+/* styling biography */
 #bio {
     text-align:center;
     color: #6039EB;
@@ -41,12 +68,14 @@ body{
     font-size: 13.5pt;
 }
 
+/* styling the general elements of hobbies section */
 section #hobbies {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* styling p section of hobbies */
 #hobbies p {
     color: #6039EB;
     font-family: Righteous;
@@ -56,6 +85,7 @@ section #hobbies {
     padding-right: 1.25em;
 }
 
+/* general list styling for hobbies section */
 #hobbies ul {
     border-style: dashed;
     border-color: #6A0A8F;
@@ -66,6 +96,7 @@ section #hobbies {
     border-bottom: 20pt;
 }
 
+/* styling odd elements in the hobbies list */
 #hobbies ul li:nth-child(odd) {
     color: #6039EB;
     font-family: Righteous;
@@ -76,6 +107,7 @@ section #hobbies {
     ;
 }
 
+/* styling even elements in the hobbies list */
 #hobbies ul li:nth-child(even) {
     color: #106EB5;
     font-family: Righteous;
@@ -86,11 +118,13 @@ section #hobbies {
     
 }
 
+/* styling general elements in gallery section */
 #gallery {
     border-style: solid;
     border-color:#6A0A8F;
 }
 
+/* styling the images in the hobbies section */
 #gallery img {
     scale: 100%;
     border-style: dashed;
@@ -99,6 +133,23 @@ section #hobbies {
     border-width: 3.5pt;
 }
 
+/* animating a hover effect for the images in the gallery section*/
+
+@keyframes hover-gif {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.01);
+    }
+  }
+
+img:hover {
+    animation:hover-gif .1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+/* styling the figure section in the gallery*/
 #gallery figure {
     text-align:center;
     color: #6039EB;
@@ -106,7 +157,7 @@ section #hobbies {
     font-size: 15pt;
 }
 
-
+/* styling the lit section on the webpage */
 #lit {
     color: #6039EB;
     font-family: Righteous;
@@ -119,18 +170,19 @@ section #hobbies {
 
 }
 
+/* styling the video section */
 #myVideo {
     margin-top: 3rem;
-    width:100%;
+    margin-bottom:3em;
+    margin: auto;
     display:block;
-    position: relative;
     text-align: center;
-    color:#6039EB;
+    color: #6039EB;
     font-family: Righteous;
-    font-size: 12pt;
-    padding-bottom: 1rem;
+    font-size: 13.5pt;
 }
 
+/* contact form styling */
 #formElements {
     display:grid;
     row-gap:0.5em;
@@ -149,6 +201,7 @@ fieldset {
     border-radius: 2em;
 }
 
+/* styling legends section in the contact form */
 legend {
     background-color:#30B000;
     border-color: #30B000;
@@ -159,6 +212,7 @@ legend {
     border-radius: 2em;
 }
 
+/* styling text boxes and general buttons on the contact form */
 #contactForm input, #contactForm textarea, #contactForm select, #contactForm button {
     padding:0.5em;
     font-size:1rem;
@@ -173,6 +227,7 @@ padding:0px;
     margin: 1rem;
 }
 
+/* styling the submit button on the contact form */
 #contactForm button {
     background-color: #6A0A8F;
     color:#30B000;
@@ -184,19 +239,31 @@ padding:0px;
     border-radius: 1.5em;
 }
 
+/* styling label section in the contact form */
 #contactForm label{
     color:#6A0A8F;
     font-family: "Righteous";
     text-decoration: underline;
 }
 
+/* animating the submit button on the contact form */
+@keyframes wiggle {
+    0%, 40%, 80% {transform: rotate(3deg);}
+    20%, 60% , 100% {transform: rotate(-3deg);}
+  }
+  
+  #contactForm button:hover {
+    animation: wiggle 2s ease-in-out infinite;
+  }
 
+/* styling footer section */
 footer {
     font-size: 10.5pt;
     color:#6A0A8F;
     font-family: "Righteous";
 }
 
+/* media query for different screen sizes and breakpoints */
 @media screen and (min-width: 60em)  {
     figure {
         display: grid;
