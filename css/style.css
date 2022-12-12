@@ -13,7 +13,7 @@ header {
     color:#30B000;
 }
 
-#navbar {
+#navbox {
     border-bottom: 1px solid;
 }
 
@@ -53,28 +53,38 @@ fill:#30B000;
 
 }
 
-.navbar li {
+.navbox li {
     list-style: none;
     display:none;
 }
 
-.navbar ul li :first-child {
+.navbox ul li :first-child {
     margin-right: auto;
     display:block;
 }
 
-.navbar ul a {
+.navbox ul a {
     text-decoration: none;
     color:inherit;
     font-size: 1.5rem;
 }
 
-#navbar svg {
+#navbox svg {
     width:1.5rem;
     fill: #30B000;
 }
 
+.checkbox:checked ~ ul.navbox_menu li{
+display:block;
+}
 
+.checkbox:checked ~ ul.navbox_toggle .close{
+    display:block;
+    }
+
+.checkbox:checked ~ ul.navbox_toggle .menu{
+     display:none;
+     }
 
 
 /* animation for avatar */
@@ -371,4 +381,21 @@ figure {
     display: block;
 }
 
+}
+
+@media only screem and (min-width:560px){
+        .navbox menu {
+            display:none;
+        }
+        
+        .navbox menu {
+            flex-direction: row;
+        }
+        
+        .navbox ul li {
+            display:block;
+        }
+        
+        
+    }
 }
