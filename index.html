@@ -17,13 +17,22 @@
 
 <body>
 
+    <!--header section-->
     <header>
         
+    <!--navigation bar and logo section-->
+
         <nav class="navbar">
             <div class="logo">
                 <img src="img/orbitron-ya.svg"  alt="my intials as a logo">
                 <h1>About Me!</h1>
             </div>
+        <input type="checkbox" id="navbox" class="navbox">
+        <label for="navbox" class="navtoggle">
+            <svg class="menu" viewBox="0 0 448 512" width="100" title="menu">
+                <img src="img/"
+            </svg>
+        </label>
             <div class="navbar-links">
                 <ul>
                     <li><a href="#bio">Bio</a></li>
@@ -35,10 +44,11 @@
         </nav>
     </header>
 
+    <!--avatar and simple information section-->
     <section id="hero">
 
         <div>
-            <img src="img/avataaars.png" style="max-width:100%;height:auto;"alt="Avatar picture of me">
+            <img src="img/avataaars.png" style="max-width:100%;height:auto;"alt="avatarpic">
             <p>Yaseen Abdulwahab</p>
             <p>Whitehouse Station, NJ</p>
             <p>Email: G00294853@stu.raritanval.edu</p>
@@ -47,6 +57,7 @@
 
     </section>
 
+    <!--Biography section-->
     <section id="bio">
 
         <h2>Biography:</h2>
@@ -70,6 +81,7 @@
 
     </section>
 
+    <!--hobbies section-->
     <section id="hobbies">
 
             <h2>Hobbies:</h2>
@@ -89,6 +101,7 @@
 
     </section>
 
+    <!--gallery section-->
     <section id="gallery">
 
         <h2>Photo Gallery:</h2>
@@ -126,30 +139,23 @@
 
     </section>
 
+    <!--article section-->
     <article id="lit">
 
-        <h2> An Excerpt From Dracula</h2>
+        <h2> CSS Animation Blog</h2>
 
         <div>
 
-            <p>Later in the day he sent for me. Ordinarily I would not have come without special reason, but just at present I am so interested in him that I would gladly make an effort. Besides, I am glad to have anything to help to pass the time. Harker is out, following up clues; and so are Lord Godalming and Quincey. Van Helsing sits in my study poring over the record prepared by the Harkers; he seems to think that by accurate knowledge of all details he will light upon some clue. He does not wish to be disturbed in the work, without cause. I would have taken him with me to see the patient, only I thought that after his last repulse he might not care to go again. There was also another reason: Renfield might not speak so freely before a third person as when he and I were alone.</p>
+            <p>The topic I decided to talk about is CSS animations. CSS animations lets web developers create animated transitions of different objects throughout the webpage. There are multiple different properties in CSS animation which let developers be as creative as they want when they are creating these animations. CSS animations are also much more different that CSS transitions because animations can have multiple different motions compared to transitions. The animations are fluid and make the webpage a lot more visually appealing. A few properties that are used in CSS animations are @keyframes, animation-name, animation-duration, animation-delay, animation-iteration-count, animation-direction, animation-timing-function, animation-fill-mode, animation, etc. The @keyframes property lets the animation of the object change during a certain/given time. The animation property has sub properties in it. animation-name this sub-property lets the user specify the name of the @keyframe animation. animation-duration is another sub-property that tells the program how long it will take an animation to make one full cycle through that specific animation. This property also lets the developer choose the color of the animation when it is 0%, 25%, 50%, 75 %, and 100% complete.  animation-delay is a sub-property that tells the program when the animation cycle will start. animation-iteration-count is another sub-property and it specifies how many times an animation will be played/ how many cycles the specific animation will go through (it can go on forever as well if the specified time is “infinite”). animation-direction is a sub-property that tells the program if the animation will go forward, backwards, and even tells it if it should alternate between the two directions (can go forward and backwards; vice versa). animation-timing-function is the sub-property that tells the program how fast the animation speed will be in other words, it is a speed curve that specifies if it will go faster or slower than the normal animation speed, the speed can be linear, exponential, and more. animation-fill-mode is the sub-property where it specifies the style of the object before the animation starts, after it ends, or both. These are some of the properties and sub-properties of CSS animations. By using these properties the animation will look fluid, by moving smoothly, and it can also be unique because the web developer decides how creative the animations will be, The possibilities are endless when it comes to CSS animations which can make the website fun and visually appealing to the person using the website, which boost the attention of the viewer of the webpage. 
 
-            <p>I found him sitting out in the middle of the floor on his stool, a pose which is generally indicative of some mental energy on his part. When I came in, he said at once, as though the question had been waiting on his lips:--</p>
+            Throughout the webpage I animated a few objects. One of them being the submit button at the bottom of the webpage, when the user hovers on the button it will wiggle back and forth. I really like this animation because of how it stops moving after the user removes the cursor from the button. Another thing I animated is the avatar picture. As you may have noticed, the image floats up and down. I really liked this one because the animation looks really smooth even though it is simple. The last thing I animated was a hovering effect on the photos on the webpage. They slightly expand when the cursor is hovering on the photo. 
+            </p>
 
-            <p>"What about souls?" It was evident then that my surmise had been correct. Unconscious cerebration was doing its work, even with the lunatic. I determined to have the matter out. "What about them yourself?" I asked. He did not reply for a moment but looked all round him, and up and down, as though he expected to find some inspiration for an answer.</p>
-
-            <p>"I don't want any souls!" he said in a feeble, apologetic way. The matter seemed preying on his mind, and so I determined to use it--to "be cruel only to be kind." So I said:--</p>
-
-            <p>"You like life, and you want life?"</p>
-
-            <p>"Oh yes! but that is all right; you needn't worry about that!"</p>
-
-            <p>"But," I asked, "how are we to get the life without getting the soul also?" This seemed to puzzle him, so I followed it up:--</p>
-            <p>"A nice time you'll have some time when you're flying out there, with the souls of thousands of flies and spiders and birds and cats buzzing and twittering and miauing all round you. You've got their lives, you know, and you must put up with their souls!" Something seemed to affect his imagination, for he put his fingers to his ears and shut his eyes, screwing them up tightly just as a small boy does when his face is being soaped. There was something pathetic in it that touched me; it also gave me a lesson, for it seemed that before me was a child--only a child, though the features were worn, and the stubble on the jaws was white. It was evident that he was undergoing some process of mental disturbance, and, knowing how his past moods had interpreted things seemingly foreign to himself, I thought I would enter into his mind as well as I could and go with him. The first step was to restore confidence, so I asked him, speaking pretty loud so that he would hear me through his closed ears:--</p>
         </div>
 
     </article>
 
+    <!--video section-->
     <section id="myVideo">
        
         <h2>Video:</h2>
@@ -160,6 +166,7 @@
     
     </section>
 
+    <!--contact form-->
     <section id="contact">
 
         <h2>Contact Us:</h2>
@@ -219,8 +226,9 @@
 
 </main>
 
+ <!--footer section-->
     <footer>
-        &copy; 2022 - Yaseen Abdulwahab
+        &copy; 2022 - Yaseen Abdulwahab GitHub: https://github.com/RVCC-IDMX/about-me-Yaseen27
     </footer>
 
 </body>
