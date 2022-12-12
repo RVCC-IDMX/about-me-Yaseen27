@@ -13,6 +13,70 @@ header {
     color:#30B000;
 }
 
+#navbar {
+    border-bottom: 1px solid;
+}
+
+.menu{
+    position:absolute;
+    cursor:pointer;
+    text-align: right;
+    margin:-15.75rem -14.5rem;
+    right:0;
+    scale: 10%;
+    fill:#30B000;
+
+}
+
+
+.close {
+display:none;
+position:absolute;
+cursor:pointer;
+text-align: right;
+margin:-15.75rem -14.5rem;
+right:0;
+scale: 10%;
+fill:#30B000;
+}
+
+.navbox {
+    display: none;
+}
+
+#navbox menu {
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    align-items: center;
+    margin:1rem;
+
+}
+
+.navbar li {
+    list-style: none;
+    display:none;
+}
+
+.navbar ul li :first-child {
+    margin-right: auto;
+    display:block;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color:inherit;
+    font-size: 1.5rem;
+}
+
+#navbar svg {
+    width:1.5rem;
+    fill: #30B000;
+}
+
+
+
+
 /* animation for avatar */
 @keyframes float {
     0% {
@@ -144,7 +208,7 @@ section #hobbies {
     }
   }
 
-img:hover {
+#gallery img:hover {
     animation:hover-gif .1s ease-in-out;
     animation-fill-mode: forwards;
   }
